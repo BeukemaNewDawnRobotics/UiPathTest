@@ -70,6 +70,7 @@ Param (
     
 
 )
+
 function WriteLog
 {
 	Param ($message, [switch] $err)
@@ -84,8 +85,12 @@ function WriteLog
 		Write-Host $line
 	}
 }
+WriteLog "Test1"
+
 $scriptPath = Split-Path -Parent $MyInvocation.MyCommand.Path
 $debugLog = "$scriptPath\orchestrator-package-deploy.log"
+
+WriteLog "Test2"
 
 #Verifying UiPath CLI folder
 $uipathCLI = "$scriptPath\uipathcli\lib\net461\uipcli.exe"

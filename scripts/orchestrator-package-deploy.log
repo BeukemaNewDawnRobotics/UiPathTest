@@ -7,3 +7,7 @@
 25-5-2023 16:15:56	uipcli location :   C:\Users\SanderBeukema\OneDrive - AB&C Groep\Documenten\UiPath\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe
 25-5-2023 16:15:56	Executing C:\Users\SanderBeukema\OneDrive - AB&C Groep\Documenten\UiPath\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe package deploy C:\Users\SanderBeukema\Downloads\uipath.github.action.1.0.98729850.nupkg https://to.awf.ai/ NDR_ZiekenhuisGelderseVallei -u sbeukema -p ****************
 25-5-2023 16:16:16	Done!
+25-5-2023 16:41:44	-----------------------------------------------------------------------------
+25-5-2023 16:41:44	uipcli location :   C:\Users\SanderBeukema\OneDrive - AB&C Groep\Documenten\UiPath\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe
+25-5-2023 16:41:44	Executing C:\Users\SanderBeukema\OneDrive - AB&C Groep\Documenten\UiPath\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe package deploy C:\Users\SanderBeukema\Downloads\uipath.github.action.1.0.98729850.nupkg https://to.awf.ai/ NDR_ZiekenhuisGelderseVallei -u sbeukema -p ****************
+25-5-2023 16:41:58	Unable to deploy project. Exit code 1
