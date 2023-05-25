@@ -13,7 +13,7 @@ env:
   ORCH_URL: https://to.awf.ai/
   ORCH_TENANT: ${{ secrets.UIPATHTENANTNAME }}
   ORCH_USER: ${{ secrets.UIPATHUSER }}
-  ORCH_PASS: ${{ env.UIPATHPASS }}
+  ORCH_PASS: $UIPATHPASS
   
 
 jobs:
