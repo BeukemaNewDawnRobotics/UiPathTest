@@ -11,8 +11,8 @@ env:
   PROJECT_NAME: uipath.github.action                         
   PROJECT_FOLDER: ${{ github.action_path }}
   ORCH_URL: https://to.awf.ai/
-  ORCH_TENANT: ${{ secrets.UIPATHTENANTNAME }}
-  ORCH_USER: ${{ secrets.UIPATHUSER }}
+  ORCH_TENANT: UIPATHTENANTNAME
+  ORCH_USER: UIPATHUSER
   ORCH_PASS: $UIPATHPASS
   
 
