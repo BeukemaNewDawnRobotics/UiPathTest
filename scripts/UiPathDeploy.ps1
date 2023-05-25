@@ -89,8 +89,6 @@ function WriteLog
 $scriptPath = Split-Path -Parent $MyInvocation.MyCommand.Path
 $debugLog = "$scriptPath\orchestrator-package-deploy.log"
 
-WriteLog "Test2"
-
 #Verifying UiPath CLI folder
 $uipathCLI = "$scriptPath\uipathcli\lib\net461\uipcli.exe"
 if (-not(Test-Path -Path $uipathCLI -PathType Leaf)) {
@@ -176,16 +174,16 @@ if($disableTelemetry -ne ""){
 }
 
 #mask sensitive info before logging 
-$ParamMask = New-Object 'Collections.Generic.List[string]'
-$ParamMask.AddRange($ParamList)
-$secretIndex = $ParamMask.IndexOf("-p");
-if($secretIndex -ge 0){
-    $ParamMask[$secretIndex + 1] = ("*" * ($orchestrator_pass.Length))
-}
-$secretIndex = $ParamMask.IndexOf("-t");
-if($secretIndex -ge 0){
-    $ParamMask[$secretIndex + 1] = $userKey.Substring(0, 4) + ("*" * ($userKey.Length - 4))
-}
+#$ParamMask = New-Object 'Collections.Generic.List[string]'
+#$ParamMask.AddRange($ParamList)
+#$secretIndex = $ParamMask.IndexOf("-p");
+#if($secretIndex -ge 0){
+#    $ParamMask[$secretIndex + 1] = ("*" * ($orchestrator_pass.Length))
+#}
+#$secretIndex = $ParamMask.IndexOf("-t");
+#if($secretIndex -ge 0){
+#    $ParamMask[$secretIndex + 1] = $userKey.Substring(0, 4) + ("*" * ($userKey.Length - 4))
+#}
 
 #log cli call with parameters
 WriteLog "Executing $uipathCLI $ParamMask"
