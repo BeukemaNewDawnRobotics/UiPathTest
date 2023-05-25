@@ -12,9 +12,8 @@ env:
   PROJECT_FOLDER: ${{ github.action_path }}
   ORCH_URL: https://to.awf.ai/
   ORCH_TENANT: ${{ secrets.UIPATHTENANTNAME }}
-  ORCH_CLIENT_ID: ${{ secrets.UIPATHCLIENTID }}
-  ORCH_USER_KEY: ${{ secrets.UIPATHUSERKEY }}
-  ORCH_ACC_NAME: ${{ secrets.UIPATHACCOUNTNAME }}
+  ORCH_USER: ${{ secrets.UIPATHUSER }}
+  ORCH_PASS: ${{ secrets.UIPATHPASS }}
 
 jobs:
   print-details:
@@ -67,4 +66,4 @@ jobs:
           name: Artifacts
       - name: Publish Nuget Package to DEV
         shell: pwsh
-        run: ${{ github.workspace }}\scripts\UiPathDeploy.ps1 ${{ github.workspace }}\package ${{env.ORCH_URL}} ${{env.ORCH_TENANT}} -UserKey ${{env.ORCH_USER_KEY}} -account_name ${{env.ORCH_ACC_NAME}}
+        run: ${{ github.workspace }}\scripts\UiPathDeploy.ps1 ${{ github.workspace }}\package ${{env.ORCH_URL}} ${{env.ORCH_TENANT}} -orchestrator_user ${{env.ORCH_USER}} -orchestrator_pass ${{env.ORCH_PASS}}
