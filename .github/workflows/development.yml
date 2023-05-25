@@ -14,6 +14,7 @@ env:
   ORCH_TENANT: ${{ secrets.UIPATHTENANTNAME }}
   ORCH_USER: ${{ secrets.UIPATHUSER }}
   ORCH_PASS: ${{ secrets.UIPATHPASS }}
+  
 
 jobs:
   print-details:
@@ -31,6 +32,8 @@ jobs:
           echo "GITHUB_SHA: ${GITHUB_SHA}"
           echo "GITHUB_REF: ${GITHUB_REF}"
           echo "DEV"
+          echo "GITHUBOrch_User: ${ORCH_USER}"
+          echo "GITHUBOrch_Pass: ${ORCH_PASS}"
   cleaner:
     runs-on: ubuntu-latest
     steps:
