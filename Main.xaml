@@ -73,7 +73,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Input Values are - &quot;+in_number1.ToString +&quot; &amp; &quot; + in_number2.ToString]" />
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,62" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="test " />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,62" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="test" />
     <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Int32">[out_result]</OutArgument>

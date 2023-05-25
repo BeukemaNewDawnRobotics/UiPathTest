@@ -1,0 +1,9 @@
+﻿25-5-2023 16:14:55	UiPath CLI does not exist in this folder. Attempting to download it...
+25-5-2023 16:15:26	UiPath CLI is downloaded and extracted in folder C:\Users\SanderBeukema\OneDrive - AB&C Groep\Documenten\UiPath\UiPathTest\scripts\\uipathcli
+25-5-2023 16:15:40	-----------------------------------------------------------------------------
+25-5-2023 16:15:40	uipcli location :   C:\Users\SanderBeukema\OneDrive - AB&C Groep\Documenten\UiPath\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe
+25-5-2023 16:15:40	Fill the required paramters
+25-5-2023 16:15:56	-----------------------------------------------------------------------------
+25-5-2023 16:15:56	uipcli location :   C:\Users\SanderBeukema\OneDrive - AB&C Groep\Documenten\UiPath\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe
+25-5-2023 16:15:56	Executing C:\Users\SanderBeukema\OneDrive - AB&C Groep\Documenten\UiPath\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe package deploy C:\Users\SanderBeukema\Downloads\uipath.github.action.1.0.98729850.nupkg https://to.awf.ai/ NDR_ZiekenhuisGelderseVallei -u sbeukema -p ****************
+25-5-2023 16:16:16	Done!
