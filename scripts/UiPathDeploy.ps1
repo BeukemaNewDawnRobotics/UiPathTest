@@ -174,19 +174,20 @@ if($disableTelemetry -ne ""){
 }
 
 #mask sensitive info before logging 
-#$ParamMask = New-Object 'Collections.Generic.List[string]'
-#$ParamMask.AddRange($ParamList)
-#$secretIndex = $ParamMask.IndexOf("-p");
-#if($secretIndex -ge 0){
-#    $ParamMask[$secretIndex + 1] = ("*" * ($orchestrator_pass.Length))
-#}
-#$secretIndex = $ParamMask.IndexOf("-t");
-#if($secretIndex -ge 0){
-#    $ParamMask[$secretIndex + 1] = $userKey.Substring(0, 4) + ("*" * ($userKey.Length - 4))
-#}
+$ParamMask = New-Object 'Collections.Generic.List[string]'
+$ParamMask.AddRange($ParamList)
+$secretIndex = $ParamMask.IndexOf("-p");
+if($secretIndex -ge 0){
+    $ParamMask[$secretIndex + 1] = ("*" * ($orchestrator_pass.Length))
+}
+$secretIndex = $ParamMask.IndexOf("-t");
+if($secretIndex -ge 0){
+    $ParamMask[$secretIndex + 1] = $userKey.Substring(0, 4) + ("*" * ($userKey.Length - 4))
+}
 
 #log cli call with parameters
 WriteLog "Executing $uipathCLI $ParamMask"
+WriteLog "Executing zonder mask $uipathCLI $ParamList"
 
 #call uipath cli 
 & "$uipathCLI" $ParamList.ToArray()

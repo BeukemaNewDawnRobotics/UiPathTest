@@ -28,3 +28,14 @@
 25-5-2023 17:02:33	-----------------------------------------------------------------------------
 25-5-2023 17:02:33	uipcli location :   C:\Users\SanderBeukema\OneDrive - AB&C Groep\Documenten\UiPath\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe
 25-5-2023 17:02:33	Executing C:\Users\SanderBeukema\OneDrive - AB&C Groep\Documenten\UiPath\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe 
+25-5-2023 17:02:46	Unable to deploy project. Exit code 1
+25-5-2023 17:07:28	-----------------------------------------------------------------------------
+25-5-2023 17:07:28	uipcli location :   C:\Users\SanderBeukema\OneDrive - AB&C Groep\Documenten\UiPath\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe
+25-5-2023 17:07:28	Executing C:\Users\SanderBeukema\OneDrive - AB&C Groep\Documenten\UiPath\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe package deploy C:\Users\SanderBeukema\Downloads\uipath.github.action.1.0.98729850.nupkg https://to.awf.ai/ NDR_ZiekenhuisGelderseVallei -u sbeukema -p ****************
+25-5-2023 17:07:28	Executing C:\Users\SanderBeukema\OneDrive - AB&C Groep\Documenten\UiPath\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe package deploy C:\Users\SanderBeukema\Downloads\uipath.github.action.1.0.98729850.nupkg https://to.awf.ai/ NDR_ZiekenhuisGelderseVallei -u sbeukema -p uEFNVv*7o3&fYhYi.ToArray()
+25-5-2023 17:07:44	Unable to deploy project. Exit code 1
+25-5-2023 17:07:52	-----------------------------------------------------------------------------
+25-5-2023 17:07:52	uipcli location :   C:\Users\SanderBeukema\OneDrive - AB&C Groep\Documenten\UiPath\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe
+25-5-2023 17:07:52	Executing C:\Users\SanderBeukema\OneDrive - AB&C Groep\Documenten\UiPath\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe package deploy C:\Users\SanderBeukema\Downloads\uipath.github.action.1.0.98729850.nupkg https://to.awf.ai/ NDR_ZiekenhuisGelderseVallei -u sbeukema -p ****************
+25-5-2023 17:07:52	Executing zonder mask C:\Users\SanderBeukema\OneDrive - AB&C Groep\Documenten\UiPath\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe package deploy C:\Users\SanderBeukema\Downloads\uipath.github.action.1.0.98729850.nupkg https://to.awf.ai/ NDR_ZiekenhuisGelderseVallei -u sbeukema -p uEFNVv*7o3&fYhYi
+25-5-2023 17:08:05	Unable to deploy project. Exit code 1
