@@ -85,7 +85,6 @@ function WriteLog
 		Write-Host $line
 	}
 }
-WriteLog "Test1"
 
 $scriptPath = Split-Path -Parent $MyInvocation.MyCommand.Path
 $debugLog = "$scriptPath\orchestrator-package-deploy.log"
