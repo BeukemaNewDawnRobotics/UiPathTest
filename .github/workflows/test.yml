@@ -60,14 +60,12 @@ jobs:
         run: |
           git config --global user.name 'Sander'
           git config --global user.email 'sander.beukema@newdawnrobotics.nl'
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}
+          git remote set-url origin https://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@github.com/${GITHUB_REPOSITORY}
           echo "git config set"
           git add -A
           echo "git added"
           git commit -m "Test commit"
           echo "git committed"
-          git remote add origin https://github.com/BeukemaNewDawnRobotics/UiPathTest.git
-          git remote -v
           git push origin develop
           echo "git pushed"
          
