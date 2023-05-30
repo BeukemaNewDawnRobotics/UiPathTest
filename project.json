@@ -37,9 +37,11 @@
     "processOptions": {
       "ignoredFiles": ".local/db/references.db"
     },
-    "fileInfoCollection": [
-      "@{editingStatus=Publishable; testCaseId=c7a5d707-a0b2-4dc5-b1a5-99833c357e6a; fileName=TestCase.xaml}"
-    ],
+    "fileInfoCollection": {
+        "editingStatus": "Publishable",
+        "testCaseId": "c7a5d707-a0b2-4dc5-b1a5-99833c357e6a",
+        "fileName": "TestCase.xaml"
+    },
     "modernBehavior": true
   },
   "expressionLanguage": "VisualBasic",
