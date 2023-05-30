@@ -1,67 +1,81 @@
 {
-  "name": "UiPath Github Action",
-  "description": "Blank Process",
-  "main": "Main.xaml",
-  "dependencies": {
-    "UiPath.Excel.Activities": "[2.11.4]",
-    "UiPath.Mail.Activities": "[1.12.3]",
-    "UiPath.System.Activities": "[21.10.4]",
-    "UiPath.Testing.Activities": "[1.4.6]",
-    "UiPath.UIAutomation.Activities": "[21.10.5]"
-  },
-  "webServices": [],
-  "entitiesStores": [],
-  "schemaVersion": "4.0",
-  "studioVersion": "21.10.4.0",
-  "projectVersion": "1.0.15",
-  "runtimeOptions": {
-    "autoDispose": false,
-    "netFrameworkLazyLoading": false,
-    "isPausable": true,
-    "isAttended": false,
-    "requiresUserInteraction": true,
-    "supportsPersistence": false,
-    "excludedLoggedData": [
-      "Private:*",
-      "*password*"
-    ],
-    "executionType": "Workflow",
-    "readyForPiP": false,
-    "startsInPiP": false,
-    "mustRestoreAllDependencies": true
-  },
-  "designOptions": {
-    "projectProfile": "Developement",
-    "outputType": "Process",
-    "libraryOptions": {
-      "includeOriginalXaml": false,
-      "privateWorkflows": []
-    },
-    "processOptions": {
-      "ignoredFiles": [
-        ".local/db/references.db"
-      ]
-    },
-    "fileInfoCollection": [
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "c7a5d707-a0b2-4dc5-b1a5-99833c357e6a",
-        "fileName": "TestCase.xaml"
-      }
-    ],
-    "modernBehavior": true
-  },
-  "expressionLanguage": "VisualBasic",
-  "entryPoints": [
-    {
-      "filePath": "Main.xaml",
-      "uniqueId": "f9a4fa8c-4bbd-4183-bef1-5873e81281ef",
-      "input": [],
-      "output": []
-    }
-  ],
-  "isTemplate": false,
-  "templateProjectData": {},
-  "publishData": {},
-  "targetFramework": "Legacy"
+    "name":  "UiPath Github Action",
+    "description":  "Blank Process",
+    "main":  "Main.xaml",
+    "dependencies":  {
+                         "UiPath.Excel.Activities":  "[2.11.4]",
+                         "UiPath.Mail.Activities":  "[1.12.3]",
+                         "UiPath.System.Activities":  "[21.10.4]",
+                         "UiPath.Testing.Activities":  "[1.4.6]",
+                         "UiPath.UIAutomation.Activities":  "[21.10.5]"
+                     },
+    "webServices":  [
+
+                    ],
+    "entitiesStores":  [
+
+                       ],
+    "schemaVersion":  "4.0",
+    "studioVersion":  "21.10.4.0",
+    "projectVersion":  "1.0.16",
+    "runtimeOptions":  {
+                           "autoDispose":  false,
+                           "netFrameworkLazyLoading":  false,
+                           "isPausable":  true,
+                           "isAttended":  false,
+                           "requiresUserInteraction":  true,
+                           "supportsPersistence":  false,
+                           "excludedLoggedData":  [
+                                                      "Private:*",
+                                                      "*password*"
+                                                  ],
+                           "executionType":  "Workflow",
+                           "readyForPiP":  false,
+                           "startsInPiP":  false,
+                           "mustRestoreAllDependencies":  true
+                       },
+    "designOptions":  {
+                          "projectProfile":  "Developement",
+                          "outputType":  "Process",
+                          "libraryOptions":  {
+                                                 "includeOriginalXaml":  false,
+                                                 "privateWorkflows":  [
+
+                                                                      ]
+                                             },
+                          "processOptions":  {
+                                                 "ignoredFiles":  [
+                                                                      ".local/db/references.db"
+                                                                  ]
+                                             },
+                          "fileInfoCollection":  [
+                                                     {
+                                                         "editingStatus":  "Publishable",
+                                                         "testCaseId":  "c7a5d707-a0b2-4dc5-b1a5-99833c357e6a",
+                                                         "fileName":  "TestCase.xaml"
+                                                     }
+                                                 ],
+                          "modernBehavior":  true
+                      },
+    "expressionLanguage":  "VisualBasic",
+    "entryPoints":  [
+                        {
+                            "filePath":  "Main.xaml",
+                            "uniqueId":  "f9a4fa8c-4bbd-4183-bef1-5873e81281ef",
+                            "input":  [
+
+                                      ],
+                            "output":  [
+
+                                       ]
+                        }
+                    ],
+    "isTemplate":  false,
+    "templateProjectData":  {
+
+                            },
+    "publishData":  {
+
+                    },
+    "targetFramework":  "Legacy"
 }
