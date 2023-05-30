@@ -35,7 +35,7 @@ jobs:
           echo "GITHUBOrch_User: ${ORCH_USER}"
           echo "GITHUBOrch_Pass: ${ORCH_PASS}"
 
-  build-uipath-nuget-package:
+  Build-UiPath-NuGet-package:
     # You should be able to run on windows 2019 or windows latest
     needs: print-details
     runs-on: windows-latest
@@ -50,12 +50,19 @@ jobs:
         shell: pwsh
         run: ${{ github.workspace }}\scripts\UiPathPack.ps1 ${{ github.workspace }}\project.json -destination_folder ${{ github.workspace }}\package
       - name: Upload UiPath Artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: Artifacts
           path: |
            package/*.*
            scripts/*.ps1
+  Push-And-Commit-Development:
+    needs: Build-UiPath-NuGet-package
+    runs-on: windows-latest
+    steps: 
+      - name: Check out repository code
+        # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+        uses: actions/checkout@v3
       - name: Push and Commit
         run: |
           git config --global user.name 'PipelineUser'
