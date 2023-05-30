@@ -16,7 +16,9 @@
   "projectVersion": "1.0.15",
   "runtimeOptions": {
     "autoDispose": false,
+    "netFrameworkLazyLoading": false,
     "isPausable": true,
+    "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
     "excludedLoggedData": [
@@ -25,23 +27,28 @@
     ],
     "executionType": "Workflow",
     "readyForPiP": false,
-    "startsInPiP": false
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true
   },
   "designOptions": {
     "projectProfile": "Developement",
     "outputType": "Process",
     "libraryOptions": {
       "includeOriginalXaml": false,
-      "privateWorkflows": ""
+      "privateWorkflows": []
     },
     "processOptions": {
-      "ignoredFiles": ".local/db/references.db"
+      "ignoredFiles": [
+        ".local/db/references.db"
+      ]
     },
-    "fileInfoCollection": {
+    "fileInfoCollection": [
+      {
         "editingStatus": "Publishable",
         "testCaseId": "c7a5d707-a0b2-4dc5-b1a5-99833c357e6a",
         "fileName": "TestCase.xaml"
-    },
+      }
+    ],
     "modernBehavior": true
   },
   "expressionLanguage": "VisualBasic",
@@ -49,13 +56,12 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "f9a4fa8c-4bbd-4183-bef1-5873e81281ef",
-      "input": "",
-      "output": ""
+      "input": [],
+      "output": []
     }
   ],
   "isTemplate": false,
   "templateProjectData": {},
   "publishData": {},
-  "targetFramework": "Legacy",
-  "coverageMergeWorkflowPath": ""
+  "targetFramework": "Legacy"
 }
