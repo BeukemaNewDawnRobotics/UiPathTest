@@ -55,6 +55,9 @@ jobs:
            scripts/*.ps1
       - name: Push and Commit
         run: |
-          git push
+          git config --global user.name 'Sander'
+          git config --global user.email 'sander.beukema@newdawnrobotics.nl'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git commit -m "Test commit"
+          git push
          
