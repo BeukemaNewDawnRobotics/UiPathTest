@@ -66,6 +66,8 @@ jobs:
           echo "git added"
           git commit -m "Test commit"
           echo "git committed"
-          git push -u
+          git remote add origin https://github.com/BeukemaNewDawnRobotics/UiPathTest.git
+          git remote -v
+          git push origin develop
           echo "git pushed"
          
