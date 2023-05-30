@@ -58,6 +58,8 @@ jobs:
           # scripts/*.ps1
       - name: Push and Commit
         run: |
+          git config --global user.name 'PipelineUser'
+          git config --global user.email 'pipelineuser@newdawnrobotics.nl'
           git remote set-url origin https://${{secrets.GITHUB_TOKEN}}:@github.com/${{ github.repository }}.git
           echo "git config set"
           git add -A
