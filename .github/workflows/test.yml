@@ -42,20 +42,20 @@ jobs:
     steps: 
       - name: Check out repository code
         # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Increase Version
         shell: pwsh
         run: ${{ github.workspace }}\scripts\IncreaseVersionnumber.ps1 ${{ github.workspace }}\project.json
- #     - name: Build Nuget Package
-  #      shell: pwsh
-   #     run: ${{ github.workspace }}\scripts\UiPathPack.ps1 ${{ github.workspace }}\project.json -destination_folder ${{ github.workspace }}\package
-    #  - name: Upload UiPath Artifacts
-     #   uses: actions/upload-artifact@v2
-      #  with:
-       #   name: Artifacts
-        #  path: |
-         #  package/*.*
-          # scripts/*.ps1
+      - name: Build Nuget Package
+        shell: pwsh
+        run: ${{ github.workspace }}\scripts\UiPathPack.ps1 ${{ github.workspace }}\project.json -destination_folder ${{ github.workspace }}\package
+      - name: Upload UiPath Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: Artifacts
+          path: |
+           package/*.*
+           scripts/*.ps1
       - name: Push and Commit
         run: |
           git config --global user.name 'PipelineUser'
