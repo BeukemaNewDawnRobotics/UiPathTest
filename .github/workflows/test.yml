@@ -60,7 +60,7 @@ jobs:
         run: |
           git config --global user.name 'BeukemaNewDawnRobotics'
           git config --global user.email 'sander.beukema@newdawnrobotics.nl'
-          echo "GITHUB_REPOSITORY: ${GITHUB_REPOSITORY}"
+          echo "GITHUB_REPOSITORY: ${{ github.repository }}"
           git remote set-url origin https://${{secrets.GITHUB_TOKEN}}:@github.com/${GITHUB_REPOSITORY}.git
           echo "git config set"
           git add -A
