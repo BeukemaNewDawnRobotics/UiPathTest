@@ -66,6 +66,6 @@ jobs:
           echo "git added"
           git commit -m "Test commit"
           echo "git committed"
-          git push
+          git push -u
           echo "git pushed"
          
