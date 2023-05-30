@@ -18,3 +18,9 @@
 5/30/2023 2:43:23 PM	uipcli location :   D:\a\UiPathTest\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe
 5/30/2023 2:43:23 PM	Executing D:\a\UiPathTest\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe package pack D:\a\UiPathTest\UiPathTest\project.json -o D:\a\UiPathTest\UiPathTest\package
 5/30/2023 2:43:57 PM	Done! Package(s) destination folder is : D:\a\UiPathTest\UiPathTest\package
+5/30/2023 2:53:24 PM	UiPath CLI does not exist in this folder. Attempting to download it...
+5/30/2023 2:53:35 PM	UiPath CLI is downloaded and extracted in folder D:\a\UiPathTest\UiPathTest\scripts\\uipathcli
+5/30/2023 2:53:35 PM	-----------------------------------------------------------------------------
+5/30/2023 2:53:35 PM	uipcli location :   D:\a\UiPathTest\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe
+5/30/2023 2:53:35 PM	Executing D:\a\UiPathTest\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe package pack D:\a\UiPathTest\UiPathTest\project.json -o D:\a\UiPathTest\UiPathTest\package
+5/30/2023 2:54:27 PM	Done! Package(s) destination folder is : D:\a\UiPathTest\UiPathTest\package
