@@ -14,3 +14,7 @@
 30-5-2023 12:47:35	uipcli location :   C:\Test\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe
 30-5-2023 12:47:35	Executing C:\Test\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe package pack .\project.json -o .\package\ --autoVersion
 30-5-2023 12:47:40	Done! Package(s) destination folder is : .\package\
+5/30/2023 2:43:23 PM	-----------------------------------------------------------------------------
+5/30/2023 2:43:23 PM	uipcli location :   D:\a\UiPathTest\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe
+5/30/2023 2:43:23 PM	Executing D:\a\UiPathTest\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe package pack D:\a\UiPathTest\UiPathTest\project.json -o D:\a\UiPathTest\UiPathTest\package
+5/30/2023 2:43:57 PM	Done! Package(s) destination folder is : D:\a\UiPathTest\UiPathTest\package
