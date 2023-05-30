@@ -60,7 +60,7 @@ jobs:
         run: |
           git config --global user.name 'BeukemaNewDawnRobotics'
           git config --global user.email 'sander.beukema@newdawnrobotics.nl'
-          git remote set-url origin https://${{secrets.GITHUB_TOKEN}}:@github.com/${{GITHUB.WORKSPACE}}.git
+          git remote set-url origin https://${{secrets.GITHUB_TOKEN}}:@github.com/${{GITHUB_REPOSITORY}}.git
           echo "git config set"
           git add -A
           echo "git added"
