@@ -37,7 +37,7 @@ jobs:
 
   build-uipath-nuget-package:
     # You should be able to run on windows 2019 or windows latest
-    needs: cleaner
+    needs: print-details
     runs-on: windows-latest
     steps: 
       - name: Check out repository code
@@ -53,5 +53,8 @@ jobs:
           path: |
            package/*.*
            scripts/*.ps1
-     - name:
+      - name: Push and Commit
+        run: |
+          git push
+          git commit -m "Test commit"
          
