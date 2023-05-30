@@ -1,0 +1,60 @@
+name: Test workflow
+
+on:
+  push:
+    branches:
+      - develop
+
+# Here the environment variable is declared in workflow level
+env:
+  # Replace with your Orchestrator Values 
+  PROJECT_NAME: uipath.github.action                         
+  PROJECT_FOLDER: ${{ github.action_path }}
+  ORCH_URL: https://to.awf.ai/
+  ORCH_TENANT: ${{ secrets.UIPATHTENANTNAME }}
+  ORCH_USER: ${{ secrets.UIPATHUSER }}
+  ORCH_PASS: ${{ secrets.UIPATHPASS }}
+  
+
+jobs:
+  print-details:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo-default-env-variables
+        run: |
+          echo "Home: ${HOME}"
+          echo "GITHUB_WORKFLOW: ${GITHUB_WORKFLOW}"
+          echo "GITHUB_ACTIONS: ${GITHUB_ACTIONS}"
+          echo "GITHUB_ACTOR: ${GITHUB_ACTOR}"
+          echo "GITHUB_REPOSITORY: ${GITHUB_REPOSITORY}"
+          echo "GITHUB_EVENT_NAME: ${GITHUB_EVENT_NAME}"
+          echo "GITHUB_WORKSPACE: ${GITHUB_WORKSPACE}"
+          echo "GITHUB_SHA: ${GITHUB_SHA}"
+          echo "GITHUB_REF: ${GITHUB_REF}"
+          echo "DEV"
+          echo "GITHUBOrch_User: ${ORCH_USER}"
+          echo "GITHUBOrch_Pass: ${ORCH_PASS}"
+
+  build-uipath-nuget-package:
+    # You should be able to run on windows 2019 or windows latest
+    needs: print-details
+    runs-on: windows-latest
+    steps: 
+      - name: Check out repository code
+        # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+        uses: actions/checkout@v2
+      - name: Build Nuget Package
+        shell: pwsh
+        run: ${{ github.workspace }}\scripts\UiPathPack.ps1 ${{ github.workspace }}\project.json -destination_folder ${{ github.workspace }}\package
+      - name: Upload UiPath Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: Artifacts
+          path: |
+           package/*.*
+           scripts/*.ps1
+      - name: Push and Commit
+        run: |
+          git push
+          git commit -m "Test commit"
+         
