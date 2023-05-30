@@ -1,0 +1,16 @@
+﻿30-5-2023 12:45:14	-----------------------------------------------------------------------------
+30-5-2023 12:45:14	uipcli location :   C:\Test\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe
+30-5-2023 12:45:14	Executing C:\Test\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe package pack .\project.json -o C:\Users\SanderBeukema\Downloads --autoVersion
+30-5-2023 12:45:22	Done! Package(s) destination folder is : C:\Users\SanderBeukema\Downloads
+30-5-2023 12:46:01	-----------------------------------------------------------------------------
+30-5-2023 12:46:01	uipcli location :   C:\Test\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe
+30-5-2023 12:46:01	Executing C:\Test\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe package pack .\project.json -o .\package\ --autoVersion
+30-5-2023 12:46:28	Done! Package(s) destination folder is : .\package\
+30-5-2023 12:47:02	-----------------------------------------------------------------------------
+30-5-2023 12:47:02	uipcli location :   C:\Test\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe
+30-5-2023 12:47:02	Executing C:\Test\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe package pack .\project.json -o .\package\ --autoVersion
+30-5-2023 12:47:11	Done! Package(s) destination folder is : .\package\
+30-5-2023 12:47:35	-----------------------------------------------------------------------------
+30-5-2023 12:47:35	uipcli location :   C:\Test\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe
+30-5-2023 12:47:35	Executing C:\Test\UiPathTest\scripts\uipathcli\lib\net461\uipcli.exe package pack .\project.json -o .\package\ --autoVersion
+30-5-2023 12:47:40	Done! Package(s) destination folder is : .\package\
