@@ -43,6 +43,14 @@ jobs:
       - name: Check out repository code
         # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
         uses: actions/checkout@v2
+      - name: Increase Version
+        run: |
+          pathToJson = ${{ github.workspace }}\project.json
+          a = Get-Content 'project.json' -raw | ConvertFrom-Json
+          version = [version](a).projectVersion
+          newVersion = "{0}.{1}.{2}" -f $version.Major, $version.Minor, ($version.Build+1)
+          a.projectVersion=$newVersion
+          a | ConvertTo-Json | set-content $pathToJson
       - name: Build Nuget Package
         shell: pwsh
         run: ${{ github.workspace }}\scripts\UiPathPack.ps1 ${{ github.workspace }}\project.json -destination_folder ${{ github.workspace }}\package
