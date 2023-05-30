@@ -61,6 +61,7 @@ jobs:
           git config --global user.name 'Sander'
           git config --global user.email 'sander.beukema@newdawnrobotics.nl'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          git add -A
           git commit -m "Test commit"
           git push
          
