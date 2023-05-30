@@ -66,6 +66,6 @@ jobs:
           echo "git added"
           git commit -m "Test commit"
           echo "git committed"
-          git push origin develop
+          git push
           echo "git pushed"
          
