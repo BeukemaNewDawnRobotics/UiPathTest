@@ -64,7 +64,7 @@ jobs:
            
   # Create Pull Request for Merge & Review
   create-pull-request:
-    needs: publish-uipath-nuget-package
+    needs: build-uipath-nuget-package
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
@@ -79,7 +79,7 @@ jobs:
           
           
   publish-uipath-nuget-package:
-    needs: build-uipath-nuget-package
+    needs: create-pull-request
     runs-on: windows-latest
     steps: 
       - name: Download UiPath Artifacts
