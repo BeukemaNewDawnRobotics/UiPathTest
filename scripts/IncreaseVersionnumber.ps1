@@ -1,3 +1,10 @@
+Param (
+
+    #Required
+	[string] $json_path = "" # Required. The path to a json.
+)
+
+
 $pathToJson = 'project.json'
 $a = Get-Content 'project.json' -raw | ConvertFrom-Json
 $version = [version]($a).projectVersion
