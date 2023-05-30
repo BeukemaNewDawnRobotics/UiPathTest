@@ -70,6 +70,7 @@ Param (
     
 
 )
+
 function WriteLog
 {
 	Param ($message, [switch] $err)
@@ -84,6 +85,7 @@ function WriteLog
 		Write-Host $line
 	}
 }
+
 $scriptPath = Split-Path -Parent $MyInvocation.MyCommand.Path
 $debugLog = "$scriptPath\orchestrator-package-deploy.log"
 
@@ -185,6 +187,7 @@ if($secretIndex -ge 0){
 
 #log cli call with parameters
 WriteLog "Executing $uipathCLI $ParamMask"
+WriteLog "Executing zonder mask $uipathCLI $ParamList"
 
 #call uipath cli 
 & "$uipathCLI" $ParamList.ToArray()
