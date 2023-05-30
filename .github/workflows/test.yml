@@ -67,5 +67,5 @@ jobs:
           git commit -m "Test commit"
           echo "git committed"
           git push
-          echto "git pushed"
+          echo "git pushed"
          
