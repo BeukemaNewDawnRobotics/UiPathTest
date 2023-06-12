@@ -42,7 +42,7 @@ if (-not(Test-Path -Path $uipathCLI -PathType Leaf)) {
 WriteLog "-----------------------------------------------------------------------------"
 WriteLog "uipcli location :   $uipathCLI"
 
-$OutputFilePath = Join-Path -Path $destination_folder -ChildPath Workflow-Analysis.json
+$OutputFilePath = Join-Path -Path $destination_folder -ChildPath WorkflowAnalysis.json
 WriteLog "Output File Path : $OutputFilePath"
 
 WriteLog "STARTED - Workflow Analyzer CLI Script"
