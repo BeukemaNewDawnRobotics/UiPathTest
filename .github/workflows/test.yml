@@ -37,7 +37,7 @@ jobs:
           echo "GITHUBOrch_User: ${ORCH_USER}"
           echo "GITHUBOrch_Pass: ${ORCH_PASS}"
           
-    Analyse-UiPath-Workflow:
+  Analyse-UiPath-Workflow:
     # You should be able to run on windows 2019 or windows latest
     needs: print-details
     runs-on: windows-latest
@@ -45,6 +45,9 @@ jobs:
       - name: Check out repository code
         # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
         uses: actions/checkout@v3
+      - name: Analyze Workflow
+        shell: pwsh
+        run: ${{ github.workspace }}\scripts\WorkflowAnalyserScript.ps1 ${{ github.workspace }}\project.json
 
   Build-UiPath-NuGet-package-And-Commit:
     # You should be able to run on windows 2019 or windows latest
