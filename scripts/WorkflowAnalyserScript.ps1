@@ -17,9 +17,9 @@ function WriteLog
 		Write-Host $line
 	}
 }
-$debugLog = "$scriptPath\orchestrator-package-pack.log"
 
 $scriptPath = Split-Path -Parent $MyInvocation.MyCommand.Path
+$debugLog = "$scriptPath\orchestrator-package-pack.log"
 $uipathCLI = "$scriptPath\uipathcli\lib\net461\uipcli.exe"
 if (-not(Test-Path -Path $uipathCLI -PathType Leaf)) {
     WriteLog "UiPath CLI does not exist in this folder. Attempting to download it..."
