@@ -1,9 +1,11 @@
 name: Test workflow
 
+#on:
+ # push:
+  #  branches:
+   #   - develop
 on:
-  push:
-    branches:
-      - develop
+  workflow_dispatch:
 
 # Here the environment variable is declared in workflow level
 env:
