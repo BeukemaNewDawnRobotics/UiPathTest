@@ -47,13 +47,13 @@ jobs:
         uses: actions/checkout@v3
       - name: Analyze Workflow
         shell: pwsh
-        run: ${{ github.workspace }}\scripts\WorkflowAnalyserScript.ps1 ${{ github.workspace }}\project.json ${{ github.workspace }}\Analyser
+        run: ${{ github.workspace }}\scripts\WorkflowAnalyserScript.ps1 ${{ github.workspace }}\project.json ${{ github.workspace }}
       - name: Upload UiPath Artifacts
         uses: actions/upload-artifact@v3
         with:
           name: ArtifactsAnalyser
           path: |
-           Analyser/*.*
+           /Workflow-Analysis.json
 
   Build-UiPath-NuGet-package-And-Commit:
     # You should be able to run on windows 2019 or windows latest
