@@ -3,6 +3,20 @@ Param (
   [string] $destination_folder = "" #location of the analisis file
 )
 
+function WriteLog
+{
+	Param ($message, [switch] $err)
+	
+	$now = Get-Date -Format "G"
+	$line = "$now`t$message"
+	$line | Add-Content $debugLog -Encoding UTF8
+	if ($err)
+	{
+		Write-Host $line -ForegroundColor red
+	} else {
+		Write-Host $line
+	}
+}
 
 $scriptPath = Split-Path -Parent $MyInvocation.MyCommand.Path
 $uipathCLI = "$scriptPath\uipathcli\lib\net461\uipcli.exe"
