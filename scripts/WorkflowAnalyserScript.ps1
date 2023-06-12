@@ -17,6 +17,7 @@ function WriteLog
 		Write-Host $line
 	}
 }
+$debugLog = "$scriptPath\orchestrator-package-pack.log"
 
 $scriptPath = Split-Path -Parent $MyInvocation.MyCommand.Path
 $uipathCLI = "$scriptPath\uipathcli\lib\net461\uipcli.exe"
