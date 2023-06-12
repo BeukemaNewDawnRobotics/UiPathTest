@@ -45,8 +45,8 @@ WriteLog "uipcli location :   $uipathCLI"
 $OutputFilePath = Join-Path -Path $destination_folder -ChildPath Workflow-Analysis.json
 WriteLog "Output File Path : $OutputFilePath"
 
-Write-Output "$(Get-Date -Format 'HH:mm:ss') - STARTED - Workflow Analyzer CLI Script"
-$Command = "$scriptPath analyze -p $ProjectFilePath"
+WriteLog "STARTED - Workflow Analyzer CLI Script"
+$Command = "$uipathCLI analyze -p $ProjectFilePath"
 Invoke-Expression $Command | Out-File -FilePath $OutputFilePath
 
-Write-Output "$(Get-Date -Format 'HH:mm:ss') - COMPLETED - Workflow analyzer CLI Script to $OutputFilePath"
+WriteLog "COMPLETED - Workflow analyzer CLI Script to $OutputFilePath"
